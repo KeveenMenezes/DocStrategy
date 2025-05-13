@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PureAbstraction.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33166d8bfbbbc24b4e2815f0b13bd99f7bb390d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+843811d1845d7c973a776e5c7e144123d913d6be")]
 [assembly: System.Reflection.AssemblyProductAttribute("PureAbstraction.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PureAbstraction.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

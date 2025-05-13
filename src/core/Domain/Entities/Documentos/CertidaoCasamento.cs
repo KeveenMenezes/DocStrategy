@@ -14,5 +14,6 @@ public class CertidaoCasamento
     [Required]
     public string NomeConjuge { get; set; }
 
-    public required DateTime DataCasamento { get; set; }
+    [Required]
+    public  DateTime DataCasamento { get; set; }
 }

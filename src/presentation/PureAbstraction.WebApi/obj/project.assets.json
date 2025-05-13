@@ -33,6 +33,29 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
       }
     }
   },
@@ -67,10 +90,22 @@
         "microsoft.openapi.1.6.17.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../../core/Application/Application.csproj",
+      "msbuildProject": "../../core/Application/Application.csproj"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../../core/Domain/Domain.csproj",
+      "msbuildProject": "../../core/Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Application >= 1.0.0",
+      "Domain >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.3"
     ]
   },
@@ -107,7 +142,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projetos\\Estudos\\PureAbstraction\\src\\core\\Application\\Application.csproj": {
+              "projectPath": "C:\\Projetos\\Estudos\\PureAbstraction\\src\\core\\Application\\Application.csproj"
+            },
+            "C:\\Projetos\\Estudos\\PureAbstraction\\src\\core\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Projetos\\Estudos\\PureAbstraction\\src\\core\\Domain\\Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

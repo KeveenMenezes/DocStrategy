@@ -1,9 +1,12 @@
-using System;
-using PureAbstraction.WebApi.Dtos.Documentos;
-
 namespace PureAbstraction.WebApi.Mappers;
 
 public abstract class CertidaoNascimentoMapper
 {
-    public CertidaoCasamentoDto CertidaoCasamentoMapperDtoParaDomain(CertidaoCasamentoDto)
+    public static CertidaoCasamento CertidaoCasamentoMapperDtoParaDomain(
+        CertidaoCasamentoDto certidaoCasamentoDto) => new()
+        {
+            Nome = certidaoCasamentoDto.Nome,
+            NomeConjuge = certidaoCasamentoDto.NomeConjuge,
+            DataCasamento = certidaoCasamentoDto.DataCasamento
+        };
 }
