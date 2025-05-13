@@ -2,7 +2,8 @@ using Application.Adapters;
 
 namespace Application.Services.DocumentoStrategy.Strategies;
 
-public class PrimeiroFornecedorStrategy(IPrimeiroFornecedor primeiroFornecedor)
+public class PrimeiroFornecedorStrategy(
+    IPrimeiroFornecedorAdapter primeiroFornecedorAdapter)
     : IDocumentoStrategy
 {
     public List<TipoDocumento> TipoDocumentos =>
@@ -13,7 +14,7 @@ public class PrimeiroFornecedorStrategy(IPrimeiroFornecedor primeiroFornecedor)
     public async Task<string> ObterDocumentoForcedorAsync(Documento documento)
     {
         // Regras comuns entre o fornecedor
-        var mensagemFornecedor = await primeiroFornecedor.SolicitarDocumentoAsync(documento);
+        var mensagemFornecedor = await primeiroFornecedorAdapter.SolicitarDocumentoAsync(documento);
         return $"Solicitar {documento.TipoDocumento} no fornecedor {mensagemFornecedor}.";
     }
 }

@@ -1,6 +1,6 @@
 namespace Application.Adapters;
 
-public interface IPrimeiroFornecedor
+public interface ISegundoFornecedorAdapter
 {
     public Task<string> SolicitarDocumentoAsync(Documento documento);
 }

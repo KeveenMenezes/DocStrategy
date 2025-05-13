@@ -1,6 +1,9 @@
+using Application.Adapters;
+
 namespace Application.Services.DocumentoStrategy.Strategies;
 
-public class SegundoFornecedorStrategy
+public class SegundoFornecedorStrategy(
+    ISegundoFornecedorAdapter segundoFornecedorAdapter)
     : IDocumentoStrategy
 {
     public List<TipoDocumento> TipoDocumentos =>
@@ -8,8 +11,11 @@ public class SegundoFornecedorStrategy
             TipoDocumento.CertidaoCasamento
         ];
 
-    public Task<string> ObterDocumentoForcedorAsync(Documento documento)
+    public async Task<string> ObterDocumentoForcedorAsync(Documento documento)
     {
-        throw new NotImplementedException();
+        // Regras comuns entre o fornecedor
+
+        var mensagemFornecedor = await segundoFornecedorAdapter.SolicitarDocumentoAsync(documento);
+        return $"Solicitar {documento.TipoDocumento} no fornecedor {mensagemFornecedor}.";
     }
 }
