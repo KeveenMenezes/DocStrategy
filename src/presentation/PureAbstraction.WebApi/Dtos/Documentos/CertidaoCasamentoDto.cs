@@ -1,6 +1,6 @@
 namespace PureAbstraction.WebApi.Dtos.Documentos;
 
-public class CertidaoCasamento : Documento
+public class CertidaoCasamentoDto : DocumentoDto
 {
     [Required]
     public required string Nome { get; set; }
