@@ -12,7 +12,8 @@ public class PrimeiroFornecedorStrategy(IPrimeiroFornecedor primeiroFornecedor)
 
     public async Task<string> ObterDocumentoForcedorAsync(Documento documento)
     {
-        var mensagemFornecedor = primeiroFornecedor.SolicitarDocumentoAsync(documento);
+        // Regras comuns entre o fornecedor
+        var mensagemFornecedor = await primeiroFornecedor.SolicitarDocumentoAsync(documento);
         return $"Solicitar {documento.TipoDocumento} no fornecedor {mensagemFornecedor}.";
     }
 }
