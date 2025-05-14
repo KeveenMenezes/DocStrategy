@@ -1,4 +1,4 @@
-namespace Domain.Interfaces.Adapters;
+namespace PureAbstraction.Domain.Interfaces.Adapters;
 
 public interface IPrimeiroFornecedorAdapter
 {

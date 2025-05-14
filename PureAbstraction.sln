@@ -11,13 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PureAbstraction.WebApi", "src\presentation\PureAbstraction.WebApi\PureAbstraction.WebApi.csproj", "{1CB47D91-C6DC-4F55-A553-DE242A4F6DB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\core\Domain\Domain.csproj", "{1B1B3BC9-7E3F-4055-9215-568A85E3C68F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PureAbstraction.Domain", "src\core\Domain\PureAbstraction.Domain.csproj", "{1B1B3BC9-7E3F-4055-9215-568A85E3C68F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\core\Application\Application.csproj", "{E1AFE51D-11F8-42CF-8823-85960EEEF94D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PureAbstraction.Application", "src\core\Application\PureAbstraction.Application.csproj", "{E1AFE51D-11F8-42CF-8823-85960EEEF94D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeiroFornecedorAdapter", "src\infra\PrimeiroFornecedorAdapter\PrimeiroFornecedorAdapter.csproj", "{8B9B8460-26E1-4427-A0F9-F16157FD63F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PureAbstraction.PrimeiroFornecedorAdapter", "src\infra\PrimeiroFornecedorAdapter\PureAbstraction.PrimeiroFornecedorAdapter.csproj", "{8B9B8460-26E1-4427-A0F9-F16157FD63F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegundoFornecedorAdapter", "src\infra\SegundoFornecedorAdapter\SegundoFornecedorAdapter.csproj", "{0D4DEB94-7054-4D5D-911F-CCF18238E47A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PureAbstraction.SegundoFornecedorAdapter", "src\infra\SegundoFornecedorAdapter\PureAbstraction.SegundoFornecedorAdapter.csproj", "{0D4DEB94-7054-4D5D-911F-CCF18238E47A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PureAbstraction.IoC", "src\presentation\PureAbstraction.IoC\PureAbstraction.IoC.csproj", "{8C597755-B3E0-44F3-9598-A165F24EE0B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +91,18 @@ Global
 		{0D4DEB94-7054-4D5D-911F-CCF18238E47A}.Release|x64.Build.0 = Release|Any CPU
 		{0D4DEB94-7054-4D5D-911F-CCF18238E47A}.Release|x86.ActiveCfg = Release|Any CPU
 		{0D4DEB94-7054-4D5D-911F-CCF18238E47A}.Release|x86.Build.0 = Release|Any CPU
+		{8C597755-B3E0-44F3-9598-A165F24EE0B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C597755-B3E0-44F3-9598-A165F24EE0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C597755-B3E0-44F3-9598-A165F24EE0B2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8C597755-B3E0-44F3-9598-A165F24EE0B2}.Debug|x64.Build.0 = Debug|Any CPU
+		{8C597755-B3E0-44F3-9598-A165F24EE0B2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8C597755-B3E0-44F3-9598-A165F24EE0B2}.Debug|x86.Build.0 = Debug|Any CPU
+		{8C597755-B3E0-44F3-9598-A165F24EE0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C597755-B3E0-44F3-9598-A165F24EE0B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C597755-B3E0-44F3-9598-A165F24EE0B2}.Release|x64.ActiveCfg = Release|Any CPU
+		{8C597755-B3E0-44F3-9598-A165F24EE0B2}.Release|x64.Build.0 = Release|Any CPU
+		{8C597755-B3E0-44F3-9598-A165F24EE0B2}.Release|x86.ActiveCfg = Release|Any CPU
+		{8C597755-B3E0-44F3-9598-A165F24EE0B2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +113,7 @@ Global
 		{E1AFE51D-11F8-42CF-8823-85960EEEF94D} = {FBF56CC3-7AE6-AD2D-3F14-7F97FD322CD6}
 		{8B9B8460-26E1-4427-A0F9-F16157FD63F9} = {30258541-D0D8-F3FD-D559-E63D6BF074C2}
 		{0D4DEB94-7054-4D5D-911F-CCF18238E47A} = {30258541-D0D8-F3FD-D559-E63D6BF074C2}
+		{8C597755-B3E0-44F3-9598-A165F24EE0B2} = {06CFFD70-14AA-A959-A3BA-1B15D094E3B1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3439BE25-D3A2-4907-B8C5-AB179183E654}

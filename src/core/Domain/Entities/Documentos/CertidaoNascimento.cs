@@ -1,4 +1,4 @@
-namespace Domain.Entities.Documentos;
+namespace PureAbstraction.Domain.Entities.Documentos;
 
 public class CertidaoNascimento
     : Documento

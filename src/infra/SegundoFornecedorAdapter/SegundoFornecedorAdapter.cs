@@ -1,7 +1,7 @@
-using Domain.Entities;
-using Domain.Interfaces.Adapters;
+using PureAbstraction.Domain.Entities;
+using PureAbstraction.Domain.Interfaces.Adapters;
 
-namespace SegundoFornecedorAdapter;
+namespace PureAbstraction.SegundoFornecedorAdapter;
 
 public class SegundoFornecedorAdapter
     : ISegundoFornecedorAdapter

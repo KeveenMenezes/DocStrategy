@@ -1,10 +1,10 @@
-using Domain.Interfaces.Adapters;
+using PureAbstraction.Domain.Interfaces.Adapters;
 
-namespace Application.Services.DocumentoStrategy.Strategies;
+namespace PureAbstraction.Application.Services.DocumentoStrategy.Strategies;
 
 public class PrimeiroFornecedorStrategy(
     IPrimeiroFornecedorAdapter primeiroFornecedorAdapter)
-    : IDocumentoStrategy
+    : IFornecedorStrategy
 {
     public List<TipoDocumento> TipoDocumentos =>
     [

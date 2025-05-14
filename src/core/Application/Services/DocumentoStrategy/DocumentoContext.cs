@@ -1,7 +1,7 @@
-namespace Application.Services.DocumentoStrategy;
+namespace PureAbstraction.Application.Services.DocumentoStrategy;
 
 public class DocumentoContext(
-    IEnumerable<IDocumentoStrategy> documentoStrategies)
+    IEnumerable<IFornecedorStrategy> documentoStrategies)
         : IDocumentoContext
 {
     public async Task<string> SolicitarDocumentoAsync(Documento documento)
@@ -16,7 +16,7 @@ public class DocumentoContext(
         return mensagem;
     }
 
-    private IDocumentoStrategy ObterStrategy(Documento documento) =>
+    private IFornecedorStrategy ObterStrategy(Documento documento) =>
         documentoStrategies.FirstOrDefault(
             s => s.TipoDocumentos.Contains(documento.TipoDocumento)) ??
                 throw new NotImplementedException();

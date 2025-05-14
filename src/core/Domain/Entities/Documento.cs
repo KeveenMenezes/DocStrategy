@@ -1,4 +1,4 @@
-namespace Domain.Entities;
+namespace PureAbstraction.Domain.Entities;
 
 public class Documento
     : Entity

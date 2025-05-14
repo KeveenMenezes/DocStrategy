@@ -1,4 +1,4 @@
-namespace Domain.Entities.Documentos;
+namespace PureAbstraction.Domain.Entities.Documentos;
 
 public class CertidaoCasamento
     : Documento
@@ -15,5 +15,5 @@ public class CertidaoCasamento
     public string NomeConjuge { get; set; }
 
     [Required]
-    public  DateTime DataCasamento { get; set; }
+    public DateTime DataCasamento { get; set; }
 }

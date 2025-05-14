@@ -1,4 +1,4 @@
-namespace Domain.Interfaces.Services;
+namespace PureAbstraction.Domain.Interfaces.Services;
 
 public interface IDocumentoContext
 {
