@@ -14,4 +14,6 @@ public class CertidaoNascimento
     [Required]
     public string NomeMae { get; set; }
 
+    [Required]
+    public DateTime DataNascimento { get; set; }
 }
