@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
-
 namespace PureAbstraction.WebApi.Controllers;
 
 [ApiController]
@@ -7,5 +5,5 @@ namespace PureAbstraction.WebApi.Controllers;
 [ApiConventionType(typeof(DefaultApiConventions))]
 public abstract class MainController : ControllerBase
 {
-    // Other controller methods and properties
+    // Outros metodos ou propriedades comuns
 }
