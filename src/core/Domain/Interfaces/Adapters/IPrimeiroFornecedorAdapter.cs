@@ -1,4 +1,4 @@
-namespace Application.Adapters;
+namespace Domain.Interfaces.Adapters;
 
 public interface IPrimeiroFornecedorAdapter
 {

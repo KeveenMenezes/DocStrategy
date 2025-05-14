@@ -1,4 +1,4 @@
-using Application.Adapters;
+using Domain.Interfaces.Adapters;
 
 namespace Application.Services.DocumentoStrategy.Strategies;
 
