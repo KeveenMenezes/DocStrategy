@@ -1,2 +1,2 @@
 global using System.ComponentModel.DataAnnotations;
-global using Domain.Entities;
+global using PureAbstraction.Domain.Entities;

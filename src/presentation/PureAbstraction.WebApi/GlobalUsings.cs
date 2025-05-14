@@ -1,6 +1,15 @@
 global using System.ComponentModel.DataAnnotations;
-global using Domain.Entities.Documentos;
-global using Domain.Interfaces.Services;
+global using System.Text.Json.Serialization;
+global using Asp.Versioning;
+global using Asp.Versioning.ApiExplorer;
 global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Mvc.Filters;
+global using Microsoft.AspNetCore.Mvc.Formatters;
+global using Microsoft.OpenApi.Models;
+global using PureAbstraction.Domain.Entities.Documentos;
+global using PureAbstraction.Domain.Interfaces.Services;
+global using PureAbstraction.WebApi.Configurations;
 global using PureAbstraction.WebApi.Dtos.Documentos;
+global using PureAbstraction.WebApi.Filters;
 global using PureAbstraction.WebApi.Mappers;
+global using Swashbuckle.AspNetCore.SwaggerGen;
