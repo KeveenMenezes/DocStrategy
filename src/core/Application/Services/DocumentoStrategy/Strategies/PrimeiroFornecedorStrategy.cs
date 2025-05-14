@@ -16,6 +16,6 @@ public class PrimeiroFornecedorStrategy(
         // Regras comuns entre o fornecedor
 
         var mensagemFornecedor = await primeiroFornecedorAdapter.SolicitarDocumentoAsync(documento);
-        return $"Solicitar {documento.TipoDocumento} no fornecedor {mensagemFornecedor}.";
+        return $"Solicitar {documento.TipoDocumento} no {mensagemFornecedor}.";
     }
 }

@@ -4,6 +4,8 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\core\Application\PureAbstraction.Application.csproj" />
+    <ProjectReference Include="..\PureAbstraction.IoC\PureAbstraction.IoC.csproj" />
     <ProjectReference Include="..\..\core\Domain\PureAbstraction.Domain.csproj" />
   </ItemGroup>
 

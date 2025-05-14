@@ -1,3 +1,5 @@
+using PureAbstraction.IoC;
+
 namespace PureAbstraction.WebApi.Configurations;
 
 public static class ApiConfig
