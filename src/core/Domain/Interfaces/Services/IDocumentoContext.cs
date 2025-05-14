@@ -1,6 +1,0 @@
-namespace PureAbstraction.Domain.Interfaces.Services;
-
-public interface IDocumentoContext
-{
-    public Task<string> SolicitarDocumentoAsync(Documento documento);
-}

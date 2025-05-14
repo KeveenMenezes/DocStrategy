@@ -1,6 +1,0 @@
-@PureAbstraction.WebApi_HostAddress = http://localhost:5204
-
-GET {{PureAbstraction.WebApi_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

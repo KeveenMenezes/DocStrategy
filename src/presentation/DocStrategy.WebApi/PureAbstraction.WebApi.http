@@ -1,0 +1,6 @@
+@DocStrategy.WebApi_HostAddress = http://localhost:5204
+
+GET {{DocStrategy.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

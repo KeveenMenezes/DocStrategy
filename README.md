@@ -1,7 +1,7 @@
-# PureAbstraction
+# DocStrategy
 
 ## Sobre o Projeto
-O **PureAbstraction** é um projeto desenvolvido com foco em arquitetura limpa e princípios de design orientados a objetos. Ele utiliza padrões de projeto e boas práticas para garantir modularidade, escalabilidade e facilidade de manutenção. O objetivo principal é gerenciar documentos, como certidões de casamento e nascimento, através de uma API RESTful.
+O **DocStrategy** é um projeto desenvolvido com foco em arquitetura limpa e princípios de design orientados a objetos. Ele utiliza padrões de projeto e boas práticas para garantir modularidade, escalabilidade e facilidade de manutenção. O objetivo principal é gerenciar documentos, como certidões de casamento e nascimento, através de uma API RESTful.
 
 ## Arquitetura
 O projeto segue uma arquitetura em camadas, separando responsabilidades de forma clara:

@@ -1,0 +1,15 @@
+global using System.ComponentModel.DataAnnotations;
+global using System.Text.Json.Serialization;
+global using Asp.Versioning;
+global using Asp.Versioning.ApiExplorer;
+global using DocStrategy.Domain.Entities.Documentos;
+global using DocStrategy.Domain.Interfaces.Services;
+global using DocStrategy.WebApi.Configurations;
+global using DocStrategy.WebApi.Dtos.Documentos;
+global using DocStrategy.WebApi.Filters;
+global using DocStrategy.WebApi.Mappers;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Mvc.Filters;
+global using Microsoft.AspNetCore.Mvc.Formatters;
+global using Microsoft.OpenApi.Models;
+global using Swashbuckle.AspNetCore.SwaggerGen;
