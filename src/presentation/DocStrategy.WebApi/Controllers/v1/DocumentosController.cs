@@ -1,5 +1,6 @@
-namespace DocStrategy.WebApi.Controllers;
+namespace DocStrategy.WebApi.Controllers.v1;
 
+[ApiVersion("1.0")]
 public class DocumentosController(
     IDocumentoContext documentoContext)
     : MainController

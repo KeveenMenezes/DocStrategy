@@ -1,7 +1,7 @@
 namespace DocStrategy.WebApi.Controllers;
 
 [ApiController]
-[Route("api/v{v:apiVersion}/[controller]")]
+[Route("api/v{version:apiVersion}/[controller]")]
 [ApiConventionType(typeof(DefaultApiConventions))]
 public abstract class MainController : ControllerBase
 {
